@@ -1,0 +1,44 @@
+
+@import 'variables';
+
+/*Mixins padrões*/
+@mixin display-padrao {
+  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin font {
+  font-family: 'Poppins', 'Light';
+  font-size:  0.9em;
+  color:#5D5D5D;
+}
+
+/*Estilização da primeira div*/
+@mixin font-primary-div {
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.65em;
+  
+}
+/*Header*/
+  
+/*Menu*/
+@mixin font-menu {
+  font-family: 'Poppins', 'Light';
+  text-transform: uppercase;
+  font-size: 1em;
+  color:#5D5D5D;
+}
+
+/*Mobile*/
+@mixin  mobile {
+  @media(max-width: 591px){
+    @content
+  }
+}
+
+
+
+
+
