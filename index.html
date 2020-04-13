@@ -6,9 +6,25 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="sass/css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script type="text/javascript">
+    function slide1() {
+        document.getElementById('id').src = "assets/banner.png";
+        setTimeout("slide2()", 2000)
+    }
+
+    function slide2() {
+        document.getElementById('id').src = "assets/banner-02.png";
+        setTimeout("slide3()", 2000)
+    }
+
+    function slide3() {
+        document.getElementById('id').src = "assets/banner-03.png";
+        setTimeout("slide1()", 2000)
+    }
+</script>
 </head>
 
-<body>
+<body  onLoad="slide1()">
   <section class="cabecalho">
     <div class="container-cabecalho">
       <div class="cabecalho-itens">
@@ -33,11 +49,16 @@
         <img class="logo" src="assets/logo.svg">
       </div>
       <div class="header-itens">
-        <input type="text" class="input-search" placeholder="Busca">
-        <img class="icon-search" src="assets/icons/icon-search.svg">
+        <div class="input-container">
+          <input id="name" class="input" type="text" pattern=".+" required />
+          <label class="label" for="name">Busca</label>
+      </div>
+        <img class="header-icons" src="assets/icons/icon-search.svg">
+        <div class="grupo-icones">
         <img class="header-icons" src="assets/icons/icon-conta.svg">
         <img class="header-icons" src="assets/icons/icon-coracao.svg">
         <img class="header-icons" src="assets/icons/icon-loja.svg">
+      </div>
       </div>
     </div>
     <nav class="menu-nav">
@@ -86,7 +107,8 @@
 
   <section class="banner">
     <div class="container-banner">
-      <img class="img-banner" src="assets/banner.png">
+      <img id="id" width="100%">
+      <!-- class="img-banner" src="assets/banner.png" -->
     </div>
   </section>
   <section class="photos">
@@ -115,7 +137,10 @@
           </div>
         </div>
         <div class="conteudo-descricao">
+          <div class="itens">
           <h4>Camisa m/l 1802</h4>
+          <p>R$ 89,90</p>
+        </div>
         </div>
        
         <div class="conteudo-btn">
@@ -144,6 +169,16 @@
             <img class="icon-pagamento" src="assets/icons/icon-balao.svg" width="25px">
             <p>À combinar</p>
           </div>
+        </div>
+        <div class="conteudo-descricao">
+          <div class="itens">
+          <h4>Camisa m/l 1802</h4>
+          <p>R$ 89,90</p>
+          </div>
+        </div>
+       
+        <div class="conteudo-btn">
+          <button class="btn-color" type="#">Conectar</button>
         </div>
       </div>
       
@@ -175,7 +210,10 @@
         </div>
 
         <div class="conteudo-descricao">
+          <div class="itens">
           <h4>Camisa m/l 1802</h4>
+          <p>R$89,90</p>
+        </div>
         </div>
         <div class="conteudo-btn">
           <button class="btn-color" type="#">Conectar</button>
@@ -204,6 +242,16 @@
             <img class="icon-pagamento" src="assets/icons/icon-balao.svg" width="25px">
             <p>À combinar</p>
           </div>
+        </div>
+        <div class="conteudo-descricao">
+          <div class="itens">
+            <h4>Camisa m/l 1802</h4>
+            <p>R$89,90</p>
+          </div>
+        </div>
+       
+        <div class="conteudo-btn">
+          <button class="btn-color" type="#">Conectar</button>
         </div>
       </div>
 
@@ -235,8 +283,11 @@
           </div>
         </div>
         <div class="conteudo-descricao">
-          <h4 class="alinhamento-destaque">Camisola Dourada</h4>
+          <div class="itens">
+          <h4 style="margin-left:230px"class="alinhamento-destaque">Camisola Dourada</h4>
+          <p  style="margin-left:230px">R$89,90</p>
         </div>
+      </div>
         <div class="conteudo-btn">
           <button class="btn-color" type="#">Conectar</button>
         </div>
@@ -264,6 +315,16 @@
             <img class="icon-pagamento" src="assets/icons/icon-balao.svg" width="25px">
             <p>À combinar</p>
           </div>
+        </div>
+        <div class="conteudo-descricao">
+          <div class="itens">
+          <h4>Camisa m/l 1802</h4>
+          <p>R$89,90</p>
+        </div>
+        </div>
+       
+        <div class="conteudo-btn">
+          <button class="btn-color" type="#">Conectar</button>
         </div>
       </div>
     </div>
