@@ -5,7 +5,7 @@
 		"../scss/variables.scss"
 	],
 	"sourcesContent": [
-		"\r\n/*Cores primarias */\r\n\r\n$primary-color: #000;\r\n$secondy-color: #fff;\r\n$gray-color: #5D5D5D;\r\n$gray-secondy: #7c7c7c;"
+		"\r\n/*Cores primarias */\r\n\r\n$primary-color: #000;\r\n$secondy-color: #fff;\r\n$gray-color: #5D5D5D;\r\n$gray-secondy: #7c7c7c;\r\n$purple: #7F1CEF;"
 	],
 	"names": [],
 	"mappings": "AACA,oBAAoB"

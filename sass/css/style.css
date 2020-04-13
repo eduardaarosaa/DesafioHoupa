@@ -8,7 +8,6 @@
 /*Mobile*/
 /* line 5, ../projetoHoupa/sass/scss/style.scss */
 * {
-  overflow-x: hidden;
   padding: 0;
   margin: 0;
 }
@@ -25,7 +24,7 @@
   overflow-y: hidden;
 }
 
-@media (max-width: 591px) {
+@media (max-width: 764px) {
   /* line 12, ../projetoHoupa/sass/scss/style.scss */
   .cabecalho {
     height: 70px;
@@ -99,7 +98,17 @@
   border-bottom: 1px solid #000;
 }
 
-/* line 75, ../projetoHoupa/sass/scss/style.scss */
+/* line 74, ../projetoHoupa/sass/scss/style.scss */
+.input-search:focus {
+  outline: none;
+}
+
+/* line 77, ../projetoHoupa/sass/scss/style.scss */
+.input-search::placeholder {
+  margin-top: 10px;
+}
+
+/* line 81, ../projetoHoupa/sass/scss/style.scss */
 .menu-nav ul {
   display: flex;
   flex-wrap: wrap;
@@ -110,21 +119,26 @@
   justify-content: space-around;
 }
 
-/* line 80, ../projetoHoupa/sass/scss/style.scss */
+/* line 86, ../projetoHoupa/sass/scss/style.scss */
 ul li {
   list-style: none;
   text-decoration: none;
 }
 
+/* line 91, ../projetoHoupa/sass/scss/style.scss */
+.menu-nav ul .destaque {
+  color: #7F1CEF;
+}
+
 /* Linha fina */
-/* line 86, ../projetoHoupa/sass/scss/style.scss */
+/* line 95, ../projetoHoupa/sass/scss/style.scss */
 .linha-fina {
   margin-top: 10px;
   width: 99%;
-  height: 0.1cm;
+  height: 0.001cm;
 }
 
-/* line 91, ../projetoHoupa/sass/scss/style.scss */
+/* line 100, ../projetoHoupa/sass/scss/style.scss */
 .filtros {
   display: flex;
   flex-wrap: wrap;
@@ -138,7 +152,7 @@ ul li {
   border-bottom: 1px solid #7c7c7c;
 }
 
-/* line 101, ../projetoHoupa/sass/scss/style.scss */
+/* line 110, ../projetoHoupa/sass/scss/style.scss */
 .select-filtros {
   font-family: 'Poppins', 'Light';
   font-size: 0.9em;
@@ -146,7 +160,7 @@ ul li {
   border: none;
 }
 
-/* line 105, ../projetoHoupa/sass/scss/style.scss */
+/* line 114, ../projetoHoupa/sass/scss/style.scss */
 .container-titulo {
   display: flex;
   flex-wrap: wrap;
@@ -158,32 +172,235 @@ ul li {
 }
 
 /*Banner*/
-/* line 112, ../projetoHoupa/sass/scss/style.scss */
+/* line 121, ../projetoHoupa/sass/scss/style.scss */
 .img-banner {
   width: 100%;
 }
 
 /* section - photos */
-/* line 118, ../projetoHoupa/sass/scss/style.scss */
+/* line 126, ../projetoHoupa/sass/scss/style.scss */
+.bg-fundos-bela_vita {
+  margin: 5px;
+  width: 550px;
+  height: 450px;
+  background-image: url("../../assets/bella_vita.png");
+  background-size: cover;
+}
+
+/* line 134, ../projetoHoupa/sass/scss/style.scss */
+.bg-fundos-pianeta {
+  margin: 5px;
+  width: 550px;
+  height: 450px;
+  background-image: url("../../assets/pianeta.png");
+  background-size: cover;
+}
+
+/* line 141, ../projetoHoupa/sass/scss/style.scss */
+.bg-fundos-bonequim {
+  margin: 5px;
+  width: 550px;
+  height: 450px;
+  background-image: url("../../assets/bonequim.png");
+  background-size: cover;
+}
+
+/* line 148, ../projetoHoupa/sass/scss/style.scss */
+.bg-fundos-miss {
+  margin: 5px;
+  width: 550px;
+  height: 450px;
+  background-image: url("../../assets/miss.png");
+  background-size: cover;
+}
+
+/* line 155, ../projetoHoupa/sass/scss/style.scss */
+.bg-fundos-elisha {
+  margin: 5px;
+  width: 550px;
+  height: 450px;
+  background-image: url("../../assets/elisha.png");
+  background-size: cover;
+}
+
+/* line 162, ../projetoHoupa/sass/scss/style.scss */
+.bg-fundos-contagie {
+  margin: 5px;
+  width: 550px;
+  height: 450px;
+  background-image: url("../../assets/contagie.png");
+  background-size: cover;
+}
+
+/* line 169, ../projetoHoupa/sass/scss/style.scss */
+.items {
+  color: #5D5D5D;
+  font-size: 0.875rem;
+  font-family: 'Poppins';
+}
+
+/* line 174, ../projetoHoupa/sass/scss/style.scss */
 .container-photos {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-/* line 122, ../projetoHoupa/sass/scss/style.scss */
+/* line 178, ../projetoHoupa/sass/scss/style.scss */
+.conteudo {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+  margin-left: 40px;
+  margin-right: 30px;
+}
+
+/* line 185, ../projetoHoupa/sass/scss/style.scss */
+.conteudo-pagamento {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 100px;
+}
+
+/* line 190, ../projetoHoupa/sass/scss/style.scss */
+.items-pagamento {
+  font-size: 0.5em;
+  font-family: 'Poppins';
+}
+
+/* line 194, ../projetoHoupa/sass/scss/style.scss */
+.icon-pagamento {
+  margin-left: 25px;
+  margin-right: 30px;
+  margin-top: 20px;
+  border: 1px solid #5D5D5D;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+/* line 202, ../projetoHoupa/sass/scss/style.scss */
+.items-pagamento p {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 206, ../projetoHoupa/sass/scss/style.scss */
+.titulo-destaque {
+  font-family: 'Poppins';
+  font-size: 1.563rem;
+  color: #000;
+}
+
+/* line 211, ../projetoHoupa/sass/scss/style.scss */
 .container-photos img {
   padding: 5px;
 }
 
+/* line 214, ../projetoHoupa/sass/scss/style.scss */
+.conteudo-descricao {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 218, ../projetoHoupa/sass/scss/style.scss */
+.conteudo-descricao h4 {
+  text-transform: uppercase;
+  font-weight: none;
+  color: #000;
+  font-family: 'Poppins';
+  margin-left: 160px;
+  margin-top: 50px;
+}
+
+/* line 226, ../projetoHoupa/sass/scss/style.scss */
+.alinhamento-destaque {
+  margin-left: 200px;
+}
+
+/* line 229, ../projetoHoupa/sass/scss/style.scss */
+.conteudo-btn {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* line 233, ../projetoHoupa/sass/scss/style.scss */
+.btn-color {
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #000;
+  font-family: 'Poppins';
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 70px;
+  margin-left: 150px;
+}
+
 /*Footer*/
-/* line 127, ../projetoHoupa/sass/scss/style.scss */
+/* line 245, ../projetoHoupa/sass/scss/style.scss */
 footer {
   margin-top: 30px;
   background-color: #000;
   color: #fff;
-  width: 1921px;
-  height: 299px;
+  width: 100%;
+  height: 300px;
+}
+
+@media (max-width: 764px) {
+  /* line 245, ../projetoHoupa/sass/scss/style.scss */
+  footer {
+    height: 550px;
+  }
+  /* line 253, ../projetoHoupa/sass/scss/style.scss */
+  footer .logos-lojas {
+    width: 80px;
+  }
+}
+
+/* line 258, ../projetoHoupa/sass/scss/style.scss */
+.container-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin: 50px;
+}
+
+/* line 266, ../projetoHoupa/sass/scss/style.scss */
+.container-footer .titulos {
+  color: #fff;
+  font-family: 'Poppins';
+  font-size: 1em;
+  text-transform: uppercase;
+  justify-content: center;
+  font-weight: none;
+  margin-top: 20px;
+}
+
+/* line 275, ../projetoHoupa/sass/scss/style.scss */
+.container-footer p {
+  max-width: 300px;
+  display: block;
+  font-size: 0.6em;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: none;
+}
+
+/* line 284, ../projetoHoupa/sass/scss/style.scss */
+.container-sub {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 0.75em;
+  font-family: 'Poppins', sans-serif;
+  margin: 50px;
+}
+
+/* line 291, ../projetoHoupa/sass/scss/style.scss */
+.sub-footer img {
+  padding-left: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
