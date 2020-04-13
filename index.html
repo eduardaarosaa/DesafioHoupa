@@ -21,6 +21,14 @@
         document.getElementById('id').src = "assets/banner-03.png";
         setTimeout("slide1()", 2000)
     }
+
+    function Mudarestado(el) {
+        var display = document.getElementById(el).style.display;
+        if(display == "none")
+            document.getElementById(el).style.display = 'block';
+        else
+            document.getElementById(el).style.display = 'none';
+    }
 </script>
 </head>
 
@@ -61,7 +69,11 @@
       </div>
       </div>
     </div>
-    <nav class="menu-nav">
+    <div class="container-menu-mobile">
+    <img class="img-menu-mobile" onclick="Mudarestado('minhaDiv')" src="assets/icons/icon-menu.svg">
+    <a href="#" class="menu-mobile" onclick="Mudarestado('minhaDiv')">MENU</a>
+  </div>
+    <nav id="minhaDiv" class="menu-nav">
       <ul>
         <li class="destaque">Novidades</li>
         <li>Em casa</li>
@@ -108,7 +120,6 @@
   <section class="banner">
     <div class="container-banner">
       <img id="id" width="100%">
-      <!-- class="img-banner" src="assets/banner.png" -->
     </div>
   </section>
   <section class="photos">

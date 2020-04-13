@@ -32,11 +32,18 @@
 }
 
 /*Mobile*/
+@mixin mobile-two{
+  @media (max-width: 862px){
+    @content
+  }
+}
 @mixin  mobile {
   @media(max-width: 764px){
     @content
   }
 }
+
+
 
 
 

@@ -6,7 +6,7 @@
 		"../scss/variables.scss"
 	],
 	"sourcesContent": [
-		"\r\n@import 'variables';\r\n\r\n/*Mixins padrões*/\r\n@mixin display-padrao {\r\n  \r\n  display: flex;\r\n  flex-wrap: wrap;\r\n}\r\n\r\n@mixin font {\r\n  font-family: 'Poppins', 'Light';\r\n  font-size:  0.9em;\r\n  color:#5D5D5D;\r\n}\r\n\r\n/*Estilização da primeira div*/\r\n@mixin font-primary-div {\r\n\r\n  font-family: 'Poppins', sans-serif;\r\n  font-size: 0.65em;\r\n  \r\n}\r\n/*Header*/\r\n  \r\n/*Menu*/\r\n@mixin font-menu {\r\n  font-family: 'Poppins', 'Light';\r\n  text-transform: uppercase;\r\n  font-size: 1em;\r\n  color:#5D5D5D;\r\n}\r\n\r\n/*Mobile*/\r\n@mixin  mobile {\r\n  @media(max-width: 764px){\r\n    @content\r\n  }\r\n}\r\n\r\n\r\n\r\n\r\n\r\n",
+		"\r\n@import 'variables';\r\n\r\n/*Mixins padrões*/\r\n@mixin display-padrao {\r\n  \r\n  display: flex;\r\n  flex-wrap: wrap;\r\n}\r\n\r\n@mixin font {\r\n  font-family: 'Poppins', 'Light';\r\n  font-size:  0.9em;\r\n  color:#5D5D5D;\r\n}\r\n\r\n/*Estilização da primeira div*/\r\n@mixin font-primary-div {\r\n\r\n  font-family: 'Poppins', sans-serif;\r\n  font-size: 0.65em;\r\n  \r\n}\r\n/*Header*/\r\n  \r\n/*Menu*/\r\n@mixin font-menu {\r\n  font-family: 'Poppins', 'Light';\r\n  text-transform: uppercase;\r\n  font-size: 1em;\r\n  color:#5D5D5D;\r\n}\r\n\r\n/*Mobile*/\r\n@mixin mobile-two{\r\n  @media (max-width: 862px){\r\n    @content\r\n  }\r\n}\r\n@mixin  mobile {\r\n  @media(max-width: 764px){\r\n    @content\r\n  }\r\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
 		"\r\n/*Cores primarias */\r\n\r\n$primary-color: #000;\r\n$secondy-color: #fff;\r\n$gray-color: #5D5D5D;\r\n$gray-secondy: #7c7c7c;\r\n$purple: #7F1CEF;"
 	],
 	"names": [],
