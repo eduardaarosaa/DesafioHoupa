@@ -3,7 +3,6 @@
 @import 'mixins';
 
 *{
-  // overflow-x: hidden;
   padding: 0;
   margin: 0;
 }
@@ -159,6 +158,12 @@ ul li{
   margin-top:10px;
   width: 99%;
   height: 0.001cm;
+}.filtros-itens{
+  @include display-padrao;
+  justify-content: space-between;
+}
+.filtros-itens p{
+  padding-top: 10px;
 }
 .filtros{
   @include display-padrao;
@@ -166,18 +171,39 @@ ul li{
   justify-content: space-between;
   padding-left: 30px;
   padding-right: 30px;
-  padding-top:10px;
-  border-bottom: 1px solid $gray-secondy;
  
 }
-.select-filtros{
-  @include font;
-  border: none;
+/*Filtros */
+.filtros nav ul{
+  display: flex;
 }
+nav{
+padding: 5px;
+}
+ul{
+list-style-type: none;
+}
+ul li a{
+text-decoration: none;
+display: flex;
+align-items: center;
+font-size: 1em;
+padding-left:5px;
+font-family: 'Poppins';
+color:#5D5D5D;
+}
+ul li a i{
+padding-right: 4px;
+font-size: 30px;
+font-weight: 200;
+-webkit-text-stroke: 4px white;
+}
+/*Titulo */
 .container-titulo{
   @include display-padrao;
   @include font-menu;
   justify-content: center;
+  border-top: 1px solid $gray-color;
 }
 
 .container-titulo p{
@@ -269,6 +295,12 @@ ul li{
   padding-top: 2px;
   padding-bottom: 2px;
 }
+.icon-pagamento img{
+  width: 25px;
+}
+.items-pagamento img{
+  padding: 5px;
+}
 .items-pagamento p{
   display: flex;
   justify-content: center;
@@ -330,6 +362,9 @@ footer{
     }
   }
 }
+.logos-lojas{
+  width: 130px;
+}
 .container-footer{
   display: flex;
   flex-wrap: wrap;
@@ -368,6 +403,13 @@ footer{
 }
 .sub-footer img {
   padding-left: 50px;
+}
+
+.redes-sociais a{
+  padding: 5px;
+}
+.redes-sociais img{
+  width: 27px;
 }
 
 /* Mobile */ 

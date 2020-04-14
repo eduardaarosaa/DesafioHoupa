@@ -6,30 +6,9 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="sass/css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <script type="text/javascript">
-    function slide1() {
-        document.getElementById('id').src = "assets/banner.png";
-        setTimeout("slide2()", 2000)
-    }
-
-    function slide2() {
-        document.getElementById('id').src = "assets/banner-02.png";
-        setTimeout("slide3()", 2000)
-    }
-
-    function slide3() {
-        document.getElementById('id').src = "assets/banner-03.png";
-        setTimeout("slide1()", 2000)
-    }
-
-    function Mudarestado(el) {
-        var display = document.getElementById(el).style.display;
-        if(display == "none")
-            document.getElementById(el).style.display = 'block';
-        else
-            document.getElementById(el).style.display = 'none';
-    }
-</script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+  <script src="js/slide.js"></script>
 </head>
 
 <body  onLoad="slide1()">
@@ -69,6 +48,7 @@
       </div>
       </div>
     </div>
+  
     <div class="container-menu-mobile">
     <img class="img-menu-mobile" onclick="Mudarestado('minhaDiv')" src="assets/icons/icon-menu.svg">
     <a href="#" class="menu-mobile" onclick="Mudarestado('minhaDiv')">MENU</a>
@@ -92,22 +72,18 @@
     <hr class="linha-fina">
     <div class="filtros">
       <div class="filtros-itens">
-        60533 itens
+       <p>60533 itens</p>
       </div>
-      <div class="filtros-itens">
-        <select class="select-filtros">
-          <option selected>Cor</option>
-        </select>
-        <select class="select-filtros">
-          <option selected>Tamanho</option>
-        </select>
-        <select class="select-filtros">
-          <option selected>Preço</option>
-        </select>
-        <select class="select-filtros">
-          <option selected>Ordenar</option>
-        </select>
-      </div>
+      <div class='filtros'>
+        <nav>
+        <ul>
+        <li><a href=""><i class="fas fa-angle-down"></i> Cor</a></li>
+        <li><a href=""><i class="fas fa-angle-down"></i> Tamanho</a></li>
+        <li><a href=""><i class="fas fa-angle-down"></i> Preço</a></li>
+        <li><a href=""><i class="fas fa-angle-down"></i> Ordenar</a></li>
+        </ul>
+        </nav>
+        </div>
     </div>
   </header>
 
@@ -135,15 +111,15 @@
         </div>
         <div class="conteudo-pagamento">
           <div class="items-pagamento">
-            <img class="icon-pagamento" src="assets/icons/icon-boleto.svg" width="25px">
+            <img class="icon-pagamento" src="assets/icons/icon-boleto.svg">
             <p>Boleto à vista</p>
           </div>
           <div class="items-pagamento">
-            <img class="icon-pagamento" src="assets/icons/icon-cartao.svg" width="25px">
+            <img class="icon-pagamento" src="assets/icons/icon-cartao.svg">
             <p>Cartão de crédito</p>
           </div>
           <div class="items-pagamento">
-            <img class="icon-pagamento" src="assets/icons/icon-balao.svg" width="25px">
+            <img class="icon-pagamento" src="assets/icons/icon-balao.svg">
             <p>À combinar</p>
           </div>
         </div>
@@ -169,15 +145,15 @@
         </div>
         <div class="conteudo-pagamento">
           <div class="items-pagamento">
-            <img class="icon-pagamento" src="assets/icons/icon-boleto.svg" width="25px">
+            <img class="icon-pagamento" src="assets/icons/icon-boleto.svg">
             <p>Boleto à vista</p>
           </div>
           <div class="items-pagamento">
-            <img class="icon-pagamento" src="assets/icons/icon-cartao.svg" width="25px">
+            <img class="icon-pagamento" src="assets/icons/icon-cartao.svg">
             <p>Cartão de crédito</p>
           </div>
           <div class="items-pagamento">
-            <img class="icon-pagamento" src="assets/icons/icon-balao.svg" width="25px">
+            <img class="icon-pagamento" src="assets/icons/icon-balao.svg">
             <p>À combinar</p>
           </div>
         </div>
@@ -207,15 +183,15 @@
         </div>
         <div class="conteudo-pagamento">
           <div class="items-pagamento">
-            <img class="icon-pagamento" src="assets/icons/icon-boleto.svg" width="25px">
+            <img class="icon-pagamento" src="assets/icons/icon-boleto.svg">
             <p>Boleto à vista</p>
           </div>
           <div class="items-pagamento">
-            <img class="icon-pagamento" src="assets/icons/icon-cartao.svg" width="25px">
+            <img class="icon-pagamento" src="assets/icons/icon-cartao.svg">
             <p>Cartão de crédito</p>
           </div>
           <div class="items-pagamento">
-            <img class="icon-pagamento" src="assets/icons/icon-balao.svg" width="25px">
+            <img class="icon-pagamento" src="assets/icons/icon-balao.svg">
             <p>À combinar</p>
           </div>
         </div>
@@ -242,15 +218,15 @@
         </div>
         <div class="conteudo-pagamento">
           <div class="items-pagamento">
-            <img class="icon-pagamento" src="assets/icons/icon-boleto.svg" width="25px">
+            <img class="icon-pagamento" src="assets/icons/icon-boleto.svg">
             <p>Boleto à vista</p>
           </div>
           <div class="items-pagamento">
-            <img class="icon-pagamento" src="assets/icons/icon-cartao.svg" width="25px">
+            <img class="icon-pagamento" src="assets/icons/icon-cartao.svg">
             <p>Cartão de crédito</p>
           </div>
           <div class="items-pagamento">
-            <img class="icon-pagamento" src="assets/icons/icon-balao.svg" width="25px">
+            <img class="icon-pagamento" src="assets/icons/icon-balao.svg">
             <p>À combinar</p>
           </div>
         </div>
@@ -281,15 +257,15 @@
         </div>
         <div class="conteudo-pagamento">
           <div class="items-pagamento">
-            <img class="icon-pagamento" src="assets/icons/icon-boleto.svg" width="25px">
+            <img class="icon-pagamento" src="assets/icons/icon-boleto.svg">
             <p>Boleto à vista</p>
           </div>
           <div class="items-pagamento">
-            <img class="icon-pagamento" src="assets/icons/icon-cartao.svg" width="25px">
+            <img class="icon-pagamento" src="assets/icons/icon-cartao.svg">
             <p>Cartão de crédito</p>
           </div>
           <div class="items-pagamento">
-            <img class="icon-pagamento" src="assets/icons/icon-balao.svg" width="25px">
+            <img class="icon-pagamento" src="assets/icons/icon-balao.svg">
             <p>À combinar</p>
           </div>
         </div>
@@ -315,15 +291,15 @@
         </div>
         <div class="conteudo-pagamento">
           <div class="items-pagamento">
-            <img class="icon-pagamento" src="assets/icons/icon-boleto.svg" width="25px">
+            <img class="icon-pagamento" src="assets/icons/icon-boleto.svg">
             <p>Boleto à vista</p>
           </div>
           <div class="items-pagamento">
-            <img class="icon-pagamento" src="assets/icons/icon-cartao.svg" width="25px">
+            <img class="icon-pagamento" src="assets/icons/icon-cartao.svg">
             <p>Cartão de crédito</p>
           </div>
           <div class="items-pagamento">
-            <img class="icon-pagamento" src="assets/icons/icon-balao.svg" width="25px">
+            <img class="icon-pagamento" src="assets/icons/icon-balao.svg">
             <p>À combinar</p>
           </div>
         </div>
@@ -407,20 +383,20 @@
       </div>
       <div class="items">
 
-        <img class="titulos logos-lojas" src="assets/icons/logos.png" width="130px">
+        <img class="titulos logos-lojas" src="assets/icons/logos.png">
 
       </div>
     </div>
     <div class="container-sub">
-      <div>
+      <div class="redes-sociais"> 
         <a href="https://www.instagram.com/houpa.app/">
-          <img src="assets/icons/icon-instagram.svg" width="27px">
+          <img src="assets/icons/icon-instagram.svg" >
         </a>
         <a href="https://www.facebook.com/houpaapp/">
-          <img src="assets/icons/icon-facebook.svg" width="27px">
+          <img src="assets/icons/icon-facebook.svg">
         </a>
         <a href="https://www.linkedin.com/company/houpa/">
-          <img src="assets/icons/icon-linkedin.svg" width="27px">
+          <img src="assets/icons/icon-linkedin.svg">
         </a>
       </div>
       <div class="sub-footer">
